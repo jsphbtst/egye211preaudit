@@ -6,8 +6,7 @@
     "react": "^16.5.2",
     "react-device-detect": "^1.6.1",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5",
-    "three-dxf": "^0.3.1"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
