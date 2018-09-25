@@ -1,19 +1,31 @@
 import React, { Component }  from 'react';
 import { isMobile } from 'react-device-detect';
+
+import Card from 'react-bootstrap/lib/Card';
+
+import Recommendations from './components/Recommendations';
+import Cad from './components/Cad';
+
 import './App.css';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selected: false
+			selected: false,
+			furnitureList: ['A/C', 'Bag Counters', 'Bookshelves', 'Fans', 'Lights', 'Computers']
 		}
 		this.renderContent = this.renderContent.bind(this);
-		this.renderFurnitureDetails = this.renderFurnitureDetails.bind(this);
+		this.mouseOut = this.mouseOut.bind(this);
+		this.mouseOver = this.mouseOver.bind(this);
 	}
 
-	renderFurnitureDetails() {
-		// Add a switch statement here
+	mouseOut() {
+		// console.log('mouse out');
+	}
+
+	mouseOver() {
+		// console.log('mouse over');
 	}
 	
 	renderContent() {
@@ -25,31 +37,17 @@ class App extends Component {
 			);
 		}
 		return(
-			<div>
-				<div className='row'>
-					<div className='col-sm-1'></div>
-					
-					<div className='col-sm-10'>
-						<div className='embed-responsive embed-responsive-16by9'>
-							<iframe className='embed-responsive-item'
-								src='https://myhub.autodesk360.com/ue2d6a58a/shares/public/SH7f1edQT22b515c761eda9003f79da03956?mode=embed'
-								allowFullScreen='false'
-								webkitallowfullscreen='false' 
-								mozallowfullscreen='false'
-								frameBorder='0'
-								title='autodesk'/>
-						</div>
-					</div>
-
-					<div className='col-sm-1'></div>
-				</div>
+			<div className='content'>
+				<Cad/>
 
 				<div className='row'>
 					<div className='col-sm-1'></div>
 					
 					<div className='col-sm-4'>
-						<div className='pull-left'>
-							<h2>Select Equipment</h2>
+						<div className="page-header">
+							<div className='pull-left'>
+								<h2 className='title'>Select Equipment</h2>
+							</div>
 						</div>
 						{ /* 
 
@@ -59,39 +57,119 @@ class App extends Component {
 						- pick a default furniture that's clicked
 	
 						*/ }
+						<div className='z-depth-5'>
+							<Card>
+								<Card.Body>
+									<div className='row' 
+										onClick={() => console.log('AAAHH')}
+										onMouseOut={() => this.mouseOut()}
+										onMouseOver={() => this.mouseOver()}
+									>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												A/C
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Bag Counters
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Bookshelves
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Fans
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Lights
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Computers
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Round Tables
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+									<div className='row'>
+										<div className='col-8'>
+											<Card.Title className='text-left'>
+												Study Area
+											</Card.Title>
+										</div>
+										<div className='col-4'></div>
+									</div>
+								</Card.Body>
+
+
+								{/*<Card.Text>With supporting text below as a natural lead-in to additional content.</Card.Text>*/}
+							</Card>
+						</div>
+
 					</div>
 
-					<div className='col-sm-2'></div>
-
-					<div className='col-sm-4'>
-						<div className='pull-left'>
-							<h2>Equipment Details</h2>
+					<div className='col-sm-6'>
+						<div className='page-header'>
+							<div className='pull-left'>
+								<h2 className='title'>Equipment Details</h2>
+							</div>
 						</div>
-						{ this.renderFurnitureDetails() }
+						<Card>
+							<Card.Body>
+								<div className='row'>
+									<div className='col-6'>
+										<Card.Title className='text-left'>
+											asdfghj
+										</Card.Title>
+									</div>
+									<div className='col-6'></div>
+								</div>
+
+								{/*<Card.Text>With supporting text below as a natural lead-in to additional content.</Card.Text>*/}
+							</Card.Body>
+						</Card>
 					</div>
 
 					<div className='col-sm-1'></div>
 				</div>
 
-				<div className='row'>
-					<div className='col-sm-1'></div>
-					
-					<div className='col-sm-10'>
-						<div className='pull-left'>
-							<h2>Recommendations</h2>
-						</div>
-						{ /* Insert recommendations here */ }
-					</div>
-
-					<div className='col-sm-1'></div>
-				</div>
+				<Recommendations/>
 			</div>
 		);
 	}
 	render() {
 		return(
 			<div className='App'>
-				<h2 className='title'>EgyE 211 Engineering Library 1 Pre-Energy Audit</h2>
+				<h2 className='main-title'><b>EgyE 211 Engineering Library 1 Pre-Energy Audit</b></h2>
 				{ this.renderContent() }
 			</div>
 		);
