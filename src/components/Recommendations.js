@@ -7,7 +7,7 @@ const Recommendations = (props) => {
 			
 			<div className='col-sm-10'>
 				<div className='pull-left'>
-					<h2 className='title'>Recommendations</h2>
+					<h2 className='title'><b>Recommendations</b></h2>
 				</div>
 				{ /* Insert recommendations here */ }
 			</div>
