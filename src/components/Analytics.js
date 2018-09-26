@@ -1,8 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { DAY_OF_WEEK_OCCUPANCY, 
-		HOUR_OF_DAY_OCCUPANCY,
-		DAY_OF_MONTH_OCCUPANCY } from '../helpers/constants';
+import { DAY_OF_WEEK_OCCUPANCY,  HOUR_OF_DAY_OCCUPANCY,
+		DAY_OF_MONTH_OCCUPANCY, OPTIONS } from '../helpers/constants';
 
 const Analytics = () => {
 	return(
@@ -13,15 +12,15 @@ const Analytics = () => {
 					<h2 className='title'><b>Analytics</b></h2>
 				</div>
 				<div className='row'>
-					<Line data={DAY_OF_MONTH_OCCUPANCY} height={80}/>
+					<Line data={DAY_OF_MONTH_OCCUPANCY} height={80} options={OPTIONS}/>
 				</div>
 				<br/>
 				<div className='row'>
 					<div className='col-sm-6 col-md-6'>
-						<Line data={HOUR_OF_DAY_OCCUPANCY} height={100}/>
+						<Line data={HOUR_OF_DAY_OCCUPANCY} height={100} options={OPTIONS}/>
 					</div>
 					<div className='col-sm-6 col-md-6'>
-						<Line data={DAY_OF_WEEK_OCCUPANCY} height={100}/>
+						<Line data={DAY_OF_WEEK_OCCUPANCY} height={100} options={OPTIONS}/>
 					</div>
 				</div>
 			</div>

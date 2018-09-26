@@ -1,13 +1,16 @@
 export const OPTIONS = {
 	elements: {
         point:{
-            radius: 0
+            radius: 5
         }
     },
     scales: {
-        xAxes: [{
-            type: 'time',
-            position: 'bottom'
+        yAxes: [{
+            scaleLabel: {
+                display: true,
+                labelString: 'Ave. Num Occupants',
+                fontSize: 15
+            }
         }]
     },
     legend: {
