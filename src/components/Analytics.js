@@ -13,28 +13,19 @@ const Analytics = () => {
 					<h2 className='title'>Analytics</h2>
 				</div>
 
+
 				<div className='row'>
-					<Line data={DAY_OF_WEEK_OCCUPANCY} height={100}/>
+					<Line data={DAY_OF_MONTH_OCCUPANCY} height={80}/>
 				</div>
 				<br/>
 				<div className='row'>
-					<Line data={HOUR_OF_DAY_OCCUPANCY} height={100}/>
+					<div className='col-sm-6'>
+						<Line data={HOUR_OF_DAY_OCCUPANCY} height={100}/>
+					</div>
+					<div className='col-sm-6'>
+						<Line data={DAY_OF_WEEK_OCCUPANCY} height={100}/>
+					</div>
 				</div>
-				<br/>
-				<div className='row'>
-					<Line data={DAY_OF_MONTH_OCCUPANCY} height={100}/>
-				</div>
-					
-				{ /*** 
-
-				Insert react-chartjs-2 here, three time series graphs. Add a download link for the dataset also. 
-				npm install --save react-chartjs-2 chart-js
-
-				<Line data={DAY_OF_WEEK_OCCUPANCY}
-					options={OPTIONS}
-					height={300}/>
-
-				***/ }
 			</div>
 			<div className='col-sm-1'></div>
 		</div>
