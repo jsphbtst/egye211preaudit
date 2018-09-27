@@ -16,7 +16,8 @@ const AboutAuthor = (props) => {
 						<br/>
 					</div>
 					<div className='col-xs-8 col-sm-8 col-md-8 col-lg-8'>
-						<p>Blah blah blah</p>
+						<p>Joseph J. Bautista is a Master of Science in Energy Engineering student at the University of the Philippines-Diliman. He hopes to use his background in software engineering, data science, machine learning and deep learning, internet of things, and electronics to build smarter machines ranging from home automaton, energy monitoring, solar tracking, et al.
+						</p>
 					</div>
 				</div>
 			</div>
