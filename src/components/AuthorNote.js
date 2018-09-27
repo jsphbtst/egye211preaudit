@@ -3,9 +3,9 @@ import React from 'react';
 const AuthorNote = (props) => {
 	return(
 		<div className='row'>
-			<div className='col-sm-1 col-md-1'></div>
+			<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
 			
-			<div className='col-sm-10 col-md-10 shadow bump'>
+			<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 shadow bump'>
 				<div className='pull-left'>
 					<h2 className='title'><b>Author's Note</b></h2>
 				</div>
@@ -14,7 +14,7 @@ const AuthorNote = (props) => {
 				</p>
 			</div>
 
-			<div className='col-sm-1 col-md-10'></div>
+			<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
 		</div>
 	);
 }
