@@ -33,9 +33,11 @@ class App extends Component {
 	render() {
 		return(
 			<div className='App'>
-				<h2 className='main-title'>
-					<b>EgyE 211 Engineering Library 1 Pre-Energy Audit</b>
-				</h2>
+				<div className='pull-left'>
+					<h2 className='main-title'>
+						<b>EgyE 211 Engineering Library 1 Pre-Energy Audit</b>
+					</h2>
+				</div>
 				{ this.renderContent() }
 			</div>
 		);

@@ -9,18 +9,18 @@ const Analytics = () => {
 			<div className='col-sm-1 col-md-1'></div>
 			<div className='col-sm-10 col-md-10'>
 				<div className='pull-left'>
-					<h2 className='title'><b>Analytics</b></h2>
+					<h2 className='title'><b>Occupancy Data Visualization</b></h2>
 				</div>
 				<div className='row'>
 					<Line data={DAY_OF_MONTH_OCCUPANCY} height={80} options={OPTIONS}/>
 				</div>
 				<br/>
 				<div className='row'>
-					<div className='col-sm-6 col-md-6'>
-						<Line data={HOUR_OF_DAY_OCCUPANCY} height={100} options={OPTIONS}/>
+					<div className='col-sm-6 col-md-6' >
+						<Line data={HOUR_OF_DAY_OCCUPANCY} height={130} options={OPTIONS}/>
 					</div>
 					<div className='col-sm-6 col-md-6'>
-						<Line data={DAY_OF_WEEK_OCCUPANCY} height={100} options={OPTIONS}/>
+						<Line data={DAY_OF_WEEK_OCCUPANCY} height={130} options={OPTIONS}/>
 					</div>
 				</div>
 			</div>

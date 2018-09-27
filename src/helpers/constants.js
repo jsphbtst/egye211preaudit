@@ -10,11 +10,19 @@ export const OPTIONS = {
                 display: true,
                 labelString: 'Ave. Num Occupants',
                 fontSize: 15
+            },
+            gridLines: {
+                display: false
+            }
+        }],
+        xAxes: [{
+            gridLines: {
+                display: false
             }
         }]
     },
     legend: {
-    	display: false
+    	display: true
     }
 };
 
@@ -26,10 +34,12 @@ export const DAY_OF_WEEK_OCCUPANCY = {
 }
 
 const HOUR_OF_DAY_OCCUPANCY_DATA = [28.1, 61.45, 97.0, 160.55, 220.48, 281.48, 335.9, 395.66, 426.41, 500.92];
+const HOUR_OF_DAY_OCCUPANCY_WEEKEND_DATA = [11.75, 24.75, 33.5, 63.75, 137.75, 141.75, 148.25, 168.25, 182.25, 394.0];
 const HOUR_OF_DAY_OCCUPANCY_LABELS = ['8-9', '9-10', '10-11', '11-12', '12-1', '1-2', '2-3', '3-4', '4-5', '5-6'];
 export const HOUR_OF_DAY_OCCUPANCY = {
 	labels: HOUR_OF_DAY_OCCUPANCY_LABELS,
-	datasets: [{ data: HOUR_OF_DAY_OCCUPANCY_DATA, label: 'Hour of day' }]
+	datasets: [{ data: HOUR_OF_DAY_OCCUPANCY_DATA, label: 'Weekday', fill: false },
+               { data: HOUR_OF_DAY_OCCUPANCY_WEEKEND_DATA, label: 'Weekend', fill: false }]
 }
 
 const DAY_OF_MONTH_OCCUPANCY_DATA = [146.0, 160.1, 185.5, 227.7, 201.8, 26.11, 237.4, 233.8, 280.6, 334.6, 22.67, 303.9, 345.8, 264.3, 17.44, 327.44, 336.3, 374.5, 333.2, 148.7, 396.2, 364.2, 379.1, 218.3, 19.56, 206.0, 352.6, 248.9, 371.2];

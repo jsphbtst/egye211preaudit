@@ -14,6 +14,7 @@ class Equipment extends Component {
 			styleComputers: {},
 			styleRoundTables: {},
 			styleStudyArea: {},
+			breakerBoxes: {},
 			content: ''
 		};
 		this.setContent = this.setContent.bind(this);
@@ -29,55 +30,62 @@ class Equipment extends Component {
 		if (type === 'ac') {
 			this.setState({
 				styleBag: {}, styleBookshelves: {}, styleFans: {}, styleLights: {},
-				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		} 
 		if (type === 'bags') {
 			this.setState({
 				styleAC: {}, styleBookshelves: {}, styleFans: {}, styleLights: {},
-				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		} 
 
 		if (type === 'bookshelves') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleFans: {}, styleLights: {},
-				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		}
 
 		if (type === 'fans') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleLights: {},
-				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		}
 
 		if (type === 'lights') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleFans: {},
-				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		}
 
 		if (type === 'computers') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleFans: {},
-				styleLights: {}, styleRoundTables: {}, styleStudyArea: {}
+				styleLights: {}, styleRoundTables: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		}
 
 		if (type === 'tables') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleFans: {},
-				styleLights: {}, styleComputers: {}, styleStudyArea: {}
+				styleLights: {}, styleComputers: {}, styleStudyArea: {}, breakerBoxes: {}
 			});
 		}
 
 		if (type === 'area') {
 			this.setState({
 				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleFans: {},
-				styleLights: {}, styleComputers: {}, styleRoundTables: {}
+				styleLights: {}, styleComputers: {}, styleRoundTables: {}, breakerBoxes: {}
+			});
+		}
+
+		if (type === 'breaker') {
+			this.setState({
+				styleAC: {}, styleBag: {}, styleBookshelves: {}, styleFans: {},
+				styleLights: {}, styleComputers: {}, styleRoundTables: {}, styleStudyArea: {}
 			});
 		}
 	}
@@ -89,56 +97,72 @@ class Equipment extends Component {
 		if (type === 'ac') {
 			this.setState({
 				styleBag: style, styleBookshelves: style, styleFans: style, styleLights: style,
-				styleComputers: style, styleRoundTables: style, styleStudyArea: style
+				styleComputers: style, styleRoundTables: style, styleStudyArea: style, 
+				breakerBoxes: style
 			});
 		} 
 
 		if (type === 'bags') {
 			this.setState({
 				styleAC: style, styleBookshelves: style, styleFans: style, styleLights: style,
-				styleComputers: style, styleRoundTables: style, styleStudyArea: style
+				styleComputers: style, styleRoundTables: style, styleStudyArea: style, 
+				breakerBoxes: style
 			});
 		} 
 
 		if (type === 'bookshelves') {
 			this.setState({
 				styleAC: style, styleBag: style, styleFans: style, styleLights: style,
-				styleComputers: style, styleRoundTables: style, styleStudyArea: style
+				styleComputers: style, styleRoundTables: style, styleStudyArea: style, 
+				breakerBoxes: style
 			});
 		}
 
 		if (type === 'fans') {
 			this.setState({
 				styleAC: style, styleBag: style, styleBookshelves: style, styleLights: style,
-				styleComputers: style, styleRoundTables: style, styleStudyArea: style
+				styleComputers: style, styleRoundTables: style, styleStudyArea: style,
+				breakerBoxes: style
 			});
 		}
 
 		if (type === 'lights') {
 			this.setState({
 				styleAC: style, styleBag: style, styleBookshelves: style, styleFans: style,
-				styleComputers: style, styleRoundTables: style, styleStudyArea: style
+				styleComputers: style, styleRoundTables: style, styleStudyArea: style,
+				breakerBoxes: style
 			});
 		}
 
 		if (type === 'computers') {
 			this.setState({
 				styleAC: style, styleBag: style, styleBookshelves: style, styleFans: style,
-				styleLights: style, styleRoundTables: style, styleStudyArea: style
+				styleLights: style, styleRoundTables: style, styleStudyArea: style,
+				breakerBoxes: style
 			});
 		}
 
 		if (type === 'tables') {
 			this.setState({
 				styleAC: style, styleBag: style, styleBookshelves: style, styleFans: style,
-				styleLights: style, styleComputers: style, styleStudyArea: style
+				styleLights: style, styleComputers: style, styleStudyArea: style,
+				breakerBoxes: style
 			});
 		}
 
 		if (type === 'area') {
 			this.setState({
 				styleAC: style, styleBag: style, styleBookshelves: style, styleFans: style,
-				styleLights: style, styleComputers: style, styleRoundTables: style
+				styleLights: style, styleComputers: style, styleRoundTables: style,
+				breakerBoxes: style
+			});
+		}
+
+		if (type === 'breaker') {
+			this.setState({
+				styleAC: style, styleBag: style, styleBookshelves: style, styleFans: style,
+				styleLights: style, styleComputers: style, styleRoundTables: style,
+				styleStudyArea: style
 			});
 		}
 	}	
@@ -321,10 +345,30 @@ class Equipment extends Component {
 									</div>
 									<div className='col-sm-4 col-md-4'></div>
 								</div>
+								<div className='row'>
+									<div className='col-sm-8 col-md-8'>
+										<Card.Title className='text-left'>
+											{ /** Breaker Boxes **/ }
+											<div className='row breaker-boxes'
+												onClick={() => this.setContent('Breaker Box')}
+												onMouseLeave={() => this.mouseLeave('breaker')}
+												onMouseEnter={() => this.mouseEnter('breaker')}
+												style={this.state.breakerBoxes}
+											>
+												<div className='col-sm-3 col-md-3'>
+													<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><path d="M19.77 7.23l.01-.01-3.72-3.72L15 4.56l2.11 2.11c-.94.36-1.61 1.26-1.61 2.33 0 1.38 1.12 2.5 2.5 2.5.36 0 .69-.08 1-.21v7.21c0 .55-.45 1-1 1s-1-.45-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V9c0-.69-.28-1.32-.73-1.77zM18 10c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM8 18v-4.5H6L10 6v5h2l-4 7z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg>
+												</div>
+												<div className='col-sm-9 col-md-9'>
+													<h4>Breaker Boxes</h4>
+												</div>
+											</div>
+										</Card.Title>
+									</div>
+									<div className='col-sm-4 col-md-4'></div>
+								</div>
 							</Card.Body>
 						</Card>
 					</div>
-
 				</div>
 
 				<div className='col-sm-6 col-md-6'>
