@@ -59,7 +59,7 @@ class Equipment extends Component {
 			styleRoundTables: {},
 			styleStudyArea: {},
 			breakerBoxes: {},
-			content: ''
+			content: <p>Push an icon from the left to start!</p>
 		};
 		this.setContent = this.setContent.bind(this);
 		this.mouseLeave = this.mouseLeave.bind(this);
@@ -71,48 +71,48 @@ class Equipment extends Component {
 		if (content === 'ac') {
 			items.push(
 				<div>
-					<h1><b>A/C Units</b></h1>
+					<h3><b>A/C Units</b></h3>
 					<p>{AC_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC1} thumbnail/>
+							<Image src={AC1} onClick={() => window.open(AC1)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC2} thumbnail/>
+							<Image src={AC2} onClick={() => window.open(AC2)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC3} thumbnail/>
+							<Image src={AC3} onClick={() => window.open(AC3)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC4} thumbnail/>
-						</div>
-					</div>
-					<div className='row'>
-						<div className='col-sm-3 col-md-3'>
-							<Image src={AC5} thumbnail/>
-						</div>
-						<div className='col-sm-3 col-md-3'>
-							<Image src={AC6} thumbnail/>
-						</div>
-						<div className='col-sm-3 col-md-3'>
-							<Image src={AC7} thumbnail/>
-						</div>
-						<div className='col-sm-3 col-md-3'>
-							<Image src={AC8} thumbnail/>
+							<Image src={AC4} onClick={() => window.open(AC4)} thumbnail/>
 						</div>
 					</div>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC9} thumbnail/>
+							<Image src={AC5} onClick={() => window.open(AC5)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC10} thumbnail/>
+							<Image src={AC6} onClick={() => window.open(AC6)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC11} thumbnail/>
+							<Image src={AC7} onClick={() => window.open(AC7)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={AC12} thumbnail/>
+							<Image src={AC8} onClick={() => window.open(AC8)} thumbnail/>
+						</div>
+					</div>
+					<div className='row'>
+						<div className='col-sm-3 col-md-3'>
+							<Image src={AC9} onClick={() => window.open(AC9)} thumbnail/>
+						</div>
+						<div className='col-sm-3 col-md-3'>
+							<Image src={AC10} onClick={() => window.open(AC10)} thumbnail/>
+						</div>
+						<div className='col-sm-3 col-md-3'>
+							<Image src={AC11} onClick={() => window.open(AC11)} thumbnail/>
+						</div>
+						<div className='col-sm-3 col-md-3'>
+							<Image src={AC12} onClick={() => window.open(AC12)} thumbnail/>
 						</div>
 					</div>
 				</div>
@@ -122,25 +122,25 @@ class Equipment extends Component {
 		if (content === 'breaker') {
 			items.push(
 				<div>
-					<h1><b>Breaker Boxes</b></h1>
+					<h3><b>Breaker Boxes</b></h3>
 					<p>{EP_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={EP1} thumbnail/>
+							<Image src={EP1} onClick={() => window.open(EP1)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={EP2} thumbnail/>
+							<Image src={EP2} onClick={() => window.open(EP2)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={EP3} thumbnail/>
+							<Image src={EP3} onClick={() => window.open(EP3)} thumbnail/>
 						</div>
 					</div>
 					<div className='row'>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={EP4} thumbnail/>
+							<Image src={EP4} onClick={() => window.open(EP4)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={EP5} thumbnail/>
+							<Image src={EP5} onClick={() => window.open(EP5)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'></div>
 					</div>
@@ -151,34 +151,34 @@ class Equipment extends Component {
 		if (content === 'bags') {
 			items.push(
 				<div>
-					<h1><b>Bag Counters</b></h1>
+					<h3><b>Bag Counters</b></h3>
 					<p>{BAG_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG1} thumbnail/>
+							<Image src={BAG1} onClick={() => window.open(BAG1)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG2} thumbnail/>
+							<Image src={BAG2} onClick={() => window.open(BAG2)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG3} thumbnail/>
+							<Image src={BAG3} onClick={() => window.open(BAG3)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG4} thumbnail/>
+							<Image src={BAG4} onClick={() => window.open(BAG4)} thumbnail/>
 						</div>
 					</div>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG1FP} thumbnail/>
+							<Image src={BAG1FP} onClick={() => window.open(BAG1FP)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG2FP} thumbnail/>
+							<Image src={BAG2FP} onClick={() => window.open(BAG2FP)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG3FP} thumbnail/>
+							<Image src={BAG3FP} onClick={() => window.open(BAG3FP)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BAG4FP} thumbnail/>
+							<Image src={BAG4FP} onClick={() => window.open(BAG4FP)} thumbnail/>
 						</div>
 					</div>
 				</div>
@@ -188,28 +188,28 @@ class Equipment extends Component {
 		if (content === 'computers') {
 			items.push(
 				<div>
-					<h1><b>Computers</b></h1>
+					<h3><b>Computers</b></h3>
 					<p>{PC_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC1} thumbnail/>
+							<Image src={PC1} onClick={() => window.open(PC1)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC2} thumbnail/>
+							<Image src={PC2} onClick={() => window.open(PC2)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC3} thumbnail/>
+							<Image src={PC3} onClick={() => window.open(PC3)} thumbnail/>
 						</div>
 					</div>
 					<div className='row'>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC4} thumbnail/>
+							<Image src={PC4} onClick={() => window.open(PC4)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC5} thumbnail/>
+							<Image src={PC5} onClick={() => window.open(PC5)} thumbnail/>
 						</div>
 						<div className='col-sm-4 col-md-4'>
-							<Image src={PC6} thumbnail/>
+							<Image src={PC6} onClick={() => window.open(PC6)} thumbnail/>
 						</div>
 					</div>
 				</div>
@@ -220,34 +220,34 @@ class Equipment extends Component {
 		if (content === 'bookshelves') {
 			items.push(
 				<div>
-					<h1><b>Bookshelves</b></h1>
+					<h3><b>Bookshelves</b></h3>
 					<p>{BOOKSHELF_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF1} thumbnail/>
+							<Image src={BOOKSHELF1} onClick={() => window.open(BOOKSHELF1)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF2} thumbnail/>
+							<Image src={BOOKSHELF2} onClick={() => window.open(BOOKSHELF2)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF3} thumbnail/>
+							<Image src={BOOKSHELF3} onClick={() => window.open(BOOKSHELF3)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF4} thumbnail/>
+							<Image src={BOOKSHELF4} onClick={() => window.open(BOOKSHELF4)} thumbnail/>
 						</div>
 					</div>
 					<div className='row'>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF5} thumbnail/>
+							<Image src={BOOKSHELF5} onClick={() => window.open(BOOKSHELF5)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF6} thumbnail/>
+							<Image src={BOOKSHELF6} onClick={() => window.open(BOOKSHELF6)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF7} thumbnail/>
+							<Image src={BOOKSHELF7} onClick={() => window.open(BOOKSHELF7)} thumbnail/>
 						</div>
 						<div className='col-sm-3 col-md-3'>
-							<Image src={BOOKSHELF8} thumbnail/>
+							<Image src={BOOKSHELF8} onClick={() => window.open(BOOKSHELF8)} thumbnail/>
 						</div>
 					</div>
 				</div>
@@ -257,14 +257,14 @@ class Equipment extends Component {
 		if (content === 'tables') {
 			items.push(
 				<div>
-					<h1><b>Round Tables</b></h1>
+					<h3><b>Round Tables</b></h3>
 					<p>{TABLE_DESCRIPTION}</p>
 					<div className='row'>
 						<div className='col-sm-6 col-md-6'>
-							<Image src={TABLE1} thumbnail/>
+							<Image src={TABLE1} onClick={() => window.open(TABLE1)} thumbnail/>
 						</div>
 						<div className='col-sm-6 col-md-6'>
-							<Image src={TABLE1FP} thumbnail/>
+							<Image src={TABLE1FP} onClick={() => window.open(TABLE1FP)} thumbnail/>
 						</div>
 					</div>
 				</div>
@@ -421,7 +421,7 @@ class Equipment extends Component {
 			<div className='row is-table-row'>
 				<div className='col-sm-1 col-md-1'></div>
 				<div className='col-sm-4 col-md-4'>
-					<Card>
+					<Card className='bump shadow'>
 						<Card.Body>
 							<div className='row'>
 								<div className='col-sm-8 col-md-8'>
@@ -553,7 +553,7 @@ class Equipment extends Component {
 					</Card>
 				</div>
 				<div className='col-sm-6 col-md-6'>
-					<Card>
+					<Card className='bump shadow'>
 						<Card.Body>
 							<div className='row'>
 								<div className='col-sm-12 col-md-12'>
