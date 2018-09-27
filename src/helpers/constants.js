@@ -49,14 +49,14 @@ export const DAY_OF_MONTH_OCCUPANCY = {
 	datasets: [{ data: DAY_OF_MONTH_OCCUPANCY_DATA, label: 'Day of Month' }]
 }
 
-export const AC_DESCRIPTION = 'There are 12 A/Cs in the building, all from the company Carrier rated at 2 horsepowers. A1, A4, A5, A7, A9, A10, A12, as can be seen from the photographed floor plan, are all scheduled for MWFs. On the other hand, A2, A6, A8, an A11 are all scheduled for TThs. Consequently, A4 and A5 run during TThs also, while A3 is broken.';
+export const AC_DESCRIPTION = 'There are 12 two horsepower Carrier A/Cs. Seven of them are scheduled for MWFs, while 6 of them are scheduled for TThSs. Moreover, one A/C is broken, and two A/Cs run from Mondays to Saturdays. These A/Cs run for 10 hours, amounting to 50,888.7 BTU—MWFs at 365,220.9 BTUs and TTHSs at 305,332.2 BTUs.';
 
-export const BAG_DESCRIPTION = 'Bag description.';
+export const BAG_DESCRIPTION = 'There are four bag counters in the library with different dimensions. Refer to the images below for dimensions.';
 
-export const BOOKSHELF_DESCRIPTION = 'Bookshelf description.';
+export const BOOKSHELF_DESCRIPTION = 'There are eight bookshelves in the library.';
 
-export const PC_DESCRIPTION = 'Computers description.';
+export const PC_DESCRIPTION = 'There are six computers in the library.';
 
-export const TABLE_DESCRIPTION = 'Tables description.';
+export const TABLE_DESCRIPTION = 'Most round tables in the library look like the photo below. For the dimensions please refer to the photo below.';
 
-export const EP_DESCRIPTION = 'Breaker box description.';
+export const EP_DESCRIPTION = 'There are five breaker boxes in the library.';

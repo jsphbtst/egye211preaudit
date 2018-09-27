@@ -155,7 +155,7 @@ class Equipment extends Component {
 					<h3><b>Bag Counters</b></h3>
 					<p>{BAG_DESCRIPTION}</p>
 					<div className='row'>
-<div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
+						<div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>
 							<Image src={BAG1} onClick={() => window.open(BAG1)} thumbnail/>
 						</div>
 						<div className='col-xs-3 col-sm-3 col-md-3 col-lg-3'>

@@ -9,7 +9,7 @@ const Recommendations = (props) => {
 					<h2 className='title'><b>Recommendations</b></h2>
 				</div>
 				<p>
-					Here are some of my recommendations. Blah.
+					According to the data, 
 				</p>
 			</div>
 			<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
