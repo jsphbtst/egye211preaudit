@@ -10,7 +10,7 @@ const AuthorNote = (props) => {
 					<h2 className='title'><b>Author's Note</b></h2>
 				</div>
 				<p>
-					The CAD file from above was from previous students of EgyE 211. All the photos and data from this project were done in collaboration with my fellow classmates in EgyE 211 AY 2018-2019. Note that only the data was shared, all previous recommendations and analytics from said data was done solely by me in my fullest capacity.
+					The CAD file from above was from previous students of EgyE 211. All the photos and data from this project were done in collaboration with my fellow classmates in EgyE 211 AY 2018-2019. Note that only the data was shared, all previous recommendations and analytics from said data were done solely by me in my fullest capacity.
 				</p>
 			</div>
 
