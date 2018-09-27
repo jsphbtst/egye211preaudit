@@ -4,6 +4,7 @@ import Recommendations from './components/Recommendations';
 import Equipment from './components/Equipment';
 import Analytics from './components/Analytics';
 import Cad from './components/Cad';
+import AuthorNote from './components/AuthorNote';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
 				<Equipment/>
 				<Analytics/>
 				<Recommendations/>
+				<AuthorNote/>
 			</div>
 		);
 	}

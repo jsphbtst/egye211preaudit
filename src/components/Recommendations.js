@@ -9,7 +9,9 @@ const Recommendations = (props) => {
 				<div className='pull-left'>
 					<h2 className='title'><b>Recommendations</b></h2>
 				</div>
-				{ /* Insert recommendations here */ }
+				<p>
+					Here are some of my recommendations. Blah.
+				</p>
 			</div>
 
 			<div className='col-sm-1 col-md-10'></div>

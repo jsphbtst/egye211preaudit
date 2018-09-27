@@ -49,4 +49,14 @@ export const DAY_OF_MONTH_OCCUPANCY = {
 	datasets: [{ data: DAY_OF_MONTH_OCCUPANCY_DATA, label: 'Day of Month' }]
 }
 
-export const AC_DESCRIPTION = 'There are 12 A/Cs in the building, all from the company Carrier rated at 2 horsepowers. A1, A4, A5, A7, A9, A10, A12, as can be seen from the photographed floor plan, are all scheduled for MWFs. On the other hand, A2, A6, A8, an A11 are all scheduled for TThs. Consequently, A4 and A5 run during TThs also, while A3 is broken.'
+export const AC_DESCRIPTION = 'There are 12 A/Cs in the building, all from the company Carrier rated at 2 horsepowers. A1, A4, A5, A7, A9, A10, A12, as can be seen from the photographed floor plan, are all scheduled for MWFs. On the other hand, A2, A6, A8, an A11 are all scheduled for TThs. Consequently, A4 and A5 run during TThs also, while A3 is broken.';
+
+export const BAG_DESCRIPTION = 'Bag description.';
+
+export const BOOKSHELF_DESCRIPTION = 'Bookshelf description.';
+
+export const PC_DESCRIPTION = 'Computers description.';
+
+export const TABLE_DESCRIPTION = 'Tables description.';
+
+export const EP_DESCRIPTION = 'Breaker box description.';
