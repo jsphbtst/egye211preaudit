@@ -1,11 +1,11 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { DAY_OF_WEEK_OCCUPANCY,  HOUR_OF_DAY_OCCUPANCY,
-		DAY_OF_MONTH_OCCUPANCY, OPTIONS } from '../helpers/constants';
+		DAY_OF_MONTH_OCCUPANCY, OPTIONS } from '../../helpers/constants';
 
 const Analytics = () => {
 	return(
-		<div className='row'>
+		<div className='row' style={{ padding: "20px" }}>
 			<div className='col-xs-1 col-sm-1 col-md-1 col-lg-1'></div>
 			<div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 shadow bump'>
 				<div className='pull-left'>

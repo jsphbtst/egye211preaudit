@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.Equipment {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.nav {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.header {
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+
+label, input {
+	display: inline-block;
+	font-size: 30px;
+	vertical-align: middle;
+	float: right;
+}
+
+
+label:hover {
+	cursor: pointer;
+}
+
+#toggle {
+	display: none;
+}
+
+#toggle:checked + .menu {
+	display: block;
+	border: 1px solid grey;
+	border-radius: 2px;
+	margin-top: 50px;
+}
+
+a {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid grey;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+a p {
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a svg {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+
+.menu {
+	display: none;
+}
+
+.menu-elements {
+	vertical-align: middle;
+}
+
+.menu-elements a:hover {
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 820px) {
+	.Equipment {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+	label {
+		display: none;
+	}
+
+	.nav {
+		display: flex;
+	}
+
+	.header {
+		font-size: 35px !important;
+	}
+
+	.menu {
+		flex: 1;
+		display: flex;
+		align-items: right;
+	}
+
+	.menu-elements {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	.menu a {
+		display: inline-block;
+		border-bottom: 0px solid grey;
+	}
+
+
+	a p {
+		font-size: 15px;
+		margin-right: 15px;
+	}
+
+	a svg {
+		width: 15px;
+		height: 15px;
+		margin-right: 5px;
+	}	
+}

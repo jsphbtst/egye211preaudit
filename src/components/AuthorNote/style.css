@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.AuthorNote {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.author-note-header p {
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.author-note-content p {
+	font-size: 15px;
+}
+
+@media only screen and (min-width: 450px) {
+	.AuthorNote {
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.author-note-content p {
+		font-size: 20px;
+	}
+}

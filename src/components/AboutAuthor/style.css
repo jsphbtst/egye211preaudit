@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.AboutAuthor {
+	display: block;
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.author-img, .author-img img {
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.author-img img {
+	border-radius: 50%;
+}
+
+.author-heading p {
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.author-dsc p {
+	font-size: 15px;
+}
+
+@media only screen and (min-width: 450px) {
+	.AboutAuthor {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (min-width: 550px) {
+	.content {
+		display: flex;
+	}
+
+	.author-img {
+		margin-right: 5%;
+		height: 100%;
+		width: 100%;
+	}
+
+	.author-img img {
+		height: 200px;
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.author-dsc p {
+		font-size: 20px;
+	}
+
+	.AboutAuthor {
+		margin-bottom: 80px;	
+	}
+}

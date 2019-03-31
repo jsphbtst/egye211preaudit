@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cad {
+	display: block;
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cad-el {
+	display: block;
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+iframe {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 auto;
+}
+
+p {
+	display: block;
+	font-size: 10px;
+	font-family: 'Lato', sans-serif;
+	margin-top: 10px;
+}
+
+.h-dsc {
+	font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.cad-dsc {
+	text-align: left;
+	font-size: 15px;
+}
+
+@media only screen and (min-width: 450px) {
+	.cad {
+		height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (min-width: 820px) {
+	.cad {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 20px
+	}
+
+	.cad-el {
+		order: 1;
+	}
+
+	.cad-dsc {
+		order: 2;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.h-dsc {
+		font-size: 35px;
+	}
+
+	.cad-dsc {
+		text-align: left;
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 1155px) {
+	.h-dsc {
+		font-size: 35px;
+	}
+
+	.cad-dsc {
+		text-align: left;
+		font-size: 18px;
+	}
+}
+
